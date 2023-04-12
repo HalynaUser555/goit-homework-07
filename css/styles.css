@@ -420,7 +420,7 @@ screen
   margin-left: 24px;
 }
 
-/*-------------------------МОДЕЛЬНЕ ВІКНО---------------------------МОДЕЛЬНЕ ВІКНО-------------------------------МОДЕЛЬНЕ ВІКНО-----------------------
+/*-------------------------МОДЕЛЬНЕ ВІКНО---------------------------МОДЕЛЬНЕ ВІКНО-------------------------------МОДЕЛЬНЕ ВІКНО-----------------------*/
 
 .backdrop {
   position: fixed;
@@ -447,16 +447,16 @@ screen
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
   transform: translate(-50%, -50%) scale(1);
-  min-width: 408px;
+  min-width: 392px;
   min-height: 576px;
   background-color: var(--color-model);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/*  */
+
 .modal-button {
   position: absolute;
   display: flex;
@@ -475,14 +475,12 @@ screen
 }
 
 
-
-.modal-button:hover,
 .modal-button:focus {
   fill: var(--color-WHITE);
   background-color: var(--color-OCEAN);
 }
 
-/*--------------FORMA----------FORMA----------FORMA------------FORMA-------------FORMA-----------FORMA-------------------FORMA-
+/*--------------FORMA----------FORMA----------FORMA------------FORMA-------------FORMA-----------FORMA-------------------FORMA-*/
 
 .form-name {
   margin-bottom: 16px;
@@ -632,7 +630,7 @@ screen
   flex-direction: column;
   margin-bottom: 8px;
   color: var(--color-solid-logo);
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .textarea {
@@ -644,7 +642,7 @@ screen
 .textarea:focus {
   border: 1px solid var(--color-IRIS);
 }
--*/
+
 
 /*---------------------------Секції------------------Секції------------------Секції---------------------------------Секції
 
