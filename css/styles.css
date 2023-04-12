@@ -112,6 +112,7 @@ img {
   .mobile-menu-container{
     display: none;
   }
+
 }
 
 @media screen and (max-width:768px) {
@@ -122,7 +123,9 @@ img {
   .navigation-nav {
     display: none;
   } 
+  
 }
+
 
 .mobile-menu-open {
   display: flex;
@@ -644,7 +647,7 @@ screen
 }
 
 
-/*---------------------------Секції------------------Секції------------------Секції---------------------------------Секції
+/*---------------------------Секції------------------Секції------------------Секції---------------------------------Секції*/
 
 
 .button {
@@ -678,7 +681,7 @@ screen
 .images {
   background-color: var(--color-WHITE);
 }
--*/
+
 /*----------------------------------------Картинки з текстом-----------------------Kартинки з текстом----------------
 .card-box {
   display: flex;
@@ -853,72 +856,51 @@ screen
   margin-bottom: 8px;
 }
 
-.section-subtitles {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
+*/
 
-.subtitles {
+.section-subtitles {
+  padding-top: 96px;
+  padding-bottom: 96px;}
+
+
+
+.subtitles{
+  text-align: center;
   font-style: normal;
   color: var(--color-NAVYBLU);
   letter-spacing: 0.02em;
-  font-weight: 500;
+  font-weight:700;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
   margin-top: 0;
 }
 
+
 .text-paragraph {
   font-style: normal;
   color: var(--color-SLATE);
   letter-spacing: 0.02em;
-  line-height: 1.5;
   font-size: 16px;
-  font-weight: 400;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
 .text-paragraph {
-  display: flex;
+  display:inline-block;
+
 }
 
 .text-paragraph .item {
-  width: 264px;
+  width: 100%;
+  margin-bottom:72px;
+ 
 }
 
-.text-paragraph .item::before {
-  display: block;
-  content: "";
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--color-Cloud);
-  border-radius: 4px;
 
-}-*/
+/*--------------------------------------------strategy----------------------strategy-------strategy----------------*/
 
-/*--------------------------------------------strategy----------------------strategy-------strategy----------------
-.icon-strategy::before {
-  background-image: url(../images/SVG/antenna\ 1.svg);
-  margin-bottom: 8px;
-}
-
-.icon-punctuality::before {
-  background-image: url(../images/SVG/clock\ 1.svg);
-  margin-bottom: 8px;
-}
-
-.icon-diligence::before {
-  background-image: url(../images/SVG/diagram\ 1.svg);
-  margin-bottom: 8px;
-}
-
-.icon-technologies::before {
-  background-image: url(../images/SVG/astronaut\ 1.svg);
-  margin-bottom: 8px;
-}
--*/
 /*-------------------------------------CЕКЦІЯ З ІКОНКАМИ--------------------CЕКЦІЯ З ІКОНКАМИ----------CЕКЦІЯ З ІКОНКАМИ------
 .customers-section {
   padding-top: 120px;
@@ -963,10 +945,10 @@ screen
   border-color: var(--color-OCEAN);
 }
 
-.text-paragraph .item+.item {
+ .text-paragraph .item+.item {
   margin-left: 24px;
-}
-
+} 
+/*
 .text-paragraph-photo {
   font-style: normal;
   color: var(--color-SLATE);

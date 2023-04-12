@@ -55,7 +55,8 @@ top:16px;
 .header-nav{
     display: flex;
     align-items: center;
-padding: 0;}
+padding-top: 0;
+padding-bottom: 0;}
  
 .site-nav .item+.item {
     margin-left: 40px;
@@ -163,5 +164,20 @@ padding: 0;}
   }
 
 
+  .subtitles{
+    text-align:start;}
 
+  .text-paragraph {
+    display: flex;
+    flex-wrap:wrap;
+column-gap: 24px;
+  }
+  
+  .text-paragraph .item {
 
+    flex-basis: calc((100% - 2 * 24px)/ 2);
+  }
+
+  .text-paragraph .item:nth-child(odd) {
+   
+    margin-right: 24px;}
