@@ -323,13 +323,44 @@ pointer-events:auto;
   }
   
 
-/*-----------------------------Герой---------------------------------------Герой-----------------------------Герой---------
+/*-----------------------------Герой---------------------------------------Герой-----------------------------Герой---------*/
+
+
+
+
+.banner {
+  min-height:432px;
+  background-image: url('../images/SVG/mobile/Mpeople-office\ 1.jpg');
+  background-position: center top;
+  background-size: 428px 432px;
+  background-repeat: no-repeat;
+}
+/*
+screen
+2x +
+0px - 767px
+*/
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 768px),
+  screen and (min-resolution: 192dpi) and (max-width:768px),
+  screen and (min-resolution: 2dppx) and (max-width: 768px) {
+  .banner {
+    background-image: url('../images/SVG/mobile/Mpeople-office\ 1@2x.jpg')
+  }
+}
+/* 
+768px +
+*/
+@media screen and (min-width: 768px) {
+  .banner {
+    background-image: url('../images/SVG/tablet/Tpeople-office\ 1.jpg');
+  }
+}
 
 .hero {
   text-align: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
-  max-width: 1440px;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  max-width: 428px;
   margin-right: auto;
   margin-left: auto;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -338,22 +369,23 @@ pointer-events:auto;
   background-position: center;
   background-size: cover;
   background-color: var(--color-background-hero)
-}
+}  
 
 .hero-title {
-  margin-bottom: 48px;
+  margin-bottom: 72px;
   font-style: normal;
   color: var(--color-WHITE);
   letter-spacing: 0.02em;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   font-weight: 700;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 496px;
+  width: 320px;
 
 }
+
 
 
 .hero-button {
@@ -387,7 +419,7 @@ pointer-events:auto;
 .box>.item+.item {
   margin-left: 24px;
 }
-*/
+
 /*-------------------------МОДЕЛЬНЕ ВІКНО---------------------------МОДЕЛЬНЕ ВІКНО-------------------------------МОДЕЛЬНЕ ВІКНО-----------------------
 
 .backdrop {

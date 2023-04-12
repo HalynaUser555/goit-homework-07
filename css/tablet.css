@@ -13,7 +13,7 @@
   .navigation-nav{
     display: none;
 }
-.tabl-navigation-email{
+.tablet-navigation-email{
   padding-bottom: 12px;
 }
 .logo {
@@ -21,13 +21,12 @@
 
 }
 }
-.navigation-nav{
-  display: block;
-}       
+
 .site-nav{
     display: flex;
 }
 .navigation-nav{
+  display: block;
 top:16px;
 }
 .navigation-nav .link {
@@ -115,3 +114,51 @@ padding: 0;}
   
     
   
+
+
+  /* --------герой------------*/
+
+  .banner {
+    min-height:436px;
+    background-size: 768px 436px;
+   
+  }
+
+  @media screen and (min-width: 768px) {
+    .banner {
+      background-image: url('../images/SVG/tablet/Tpeople-office\ 1.jpg');
+    }
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .banner {
+      background-image: url('../images/SVG/tablet/Tpeople-office\ 1@2x.jpg');
+    }
+  }
+  
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    max-width: 768px;
+   
+  }  
+
+
+  .hero-title {
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07;
+    width: 496px;
+  
+  }
+
+
+
+ 
+
+
+
+
+
+

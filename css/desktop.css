@@ -13,14 +13,12 @@
   margin-left: auto;
 }
 
-
   .site-nav{
     display: flex;
 }
 .navigation-nav .link {
   letter-spacing: 0.02em;
   line-height: 1.5;
-  font-weight: 400;
   font-size: 16px;
   display: block;
   padding-top: 24px;
@@ -28,11 +26,47 @@
 
 }
 
-.navigation-nav .item+.item {
+.navigation-nav .item +.item {
   margin-left: 40px;
+}
+
+
+/* --------герой------------*/
+
+
+.banner {
+  min-height:600px;
+  background-size: 1440px 600px;
+}
+
+@media screen and (min-width: 1158px) {
+  .banner {
+    background-image: url('../images/SVG/desktop/people-office\ 1.jpg');
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width:1158px),
+  screen and (min-resolution: 192dpi) and (min-width:1158px),
+  screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+  .banner {
+    background-image: url('../images/SVG/desktop/people-office\ 1@2x.jpg');
+  }
 }
 
 
 
 
+
+.hero {
+  
+  padding-top: 188px;
+  padding-bottom: 188px;
+  max-width: 1440px;
+
+}
+
+.hero-title {
+  margin-bottom: 48px;
+
+}
 
