@@ -1,0 +1,38 @@
+@media screen and (min-width: 1158px){
+    .container{
+      width: 1128px;
+  }
+}
+.logo{
+  margin-right: 76px;
+}
+.navigation-nav {
+  text-decoration: none;
+  font-style: normal;
+  display: flex;
+  margin-left: auto;
+}
+
+
+  .site-nav{
+    display: flex;
+}
+.navigation-nav .link {
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+}
+
+.navigation-nav .item+.item {
+  margin-left: 40px;
+}
+
+
+
+
+

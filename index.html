@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,12 +10,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
+  <link rel="stylesheet" href="./css/styles.css" >
+  <link rel="stylesheet" href="./css/tablet.css"   media="screen and (min-width: 768px)">
+  <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1158px)">
 
+</head>
 <body>
   <header class="page-header">
-    <div class="container header-nav ">
+    <div class="container header-nav header-nav-mobile ">
       <nav class="header-nav">
         <a href="./index.html" class="logo link">
           Web<span class="text-logo-header">Studio</span>
@@ -27,10 +28,18 @@
           <li class="item"><a href="" class="link site-nav-stay">Contacts</a></li>
         </ul>
       </nav>
+
+
+
+  <button  type="button" class="mobile-menu-open js-open-menu">
+<svg class="mobile-menu-open-icon" width="32" height="22">
+  <use href="./images/SVG/symbol-defs.svg#burger-icon"></use>
+  </svg>
+  </button>   
       <address class="navigation-nav header-nav">
         <ul class="list navigation-nav ">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+          <li class="item tabl-navigation-email">
+            <a href="mailto:info@devstudio.com" class="link tabl-navigation-email">info@devstudio.com</a>
           </li>
           <li class="item">
             <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
@@ -38,9 +47,68 @@
         </ul>
       </address>
     </div>
+    <div class="container mobile-menu js-menu-container"  >
+      <div class=" mobile-menu-container">
+        <button   type="button" class="modal-button js-close-menu" >
+          <svg width="8" height="8">
+            <use href="./images/SVG/symbol-defs.svg#close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+      <nav>
+        <ul class="site-nav-mobile list">
+          <li><a href="./index.html" class="link">Studio</a></li>
+          <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+          <li><a href="" class="link ">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="  navigation-nav-mobile ">
+        <ul class="list">
+          <li>
+            <a href="tel:+110001111111" class="link mobile-tel" >+11 (000) 111-11-11</a>
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="link mobile-email">info@devstudio.com</a>
+          </li>
+        </ul>
+      </address>
+      <div>
+        <ul class="container-icon-mobile ">
+          <li class="list">
+            <a class="team-icon" href="">
+              <svg class="icon-link" width="16" height="16">
+                <use href="./images/SVG/symbol-defs.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list">
+            <a class="team-icon" href="">
+              <svg class="icon-link" width="16" height="16">
+                <use href="./images/SVG/symbol-defs.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list">
+            <a class="team-icon" href="">
+              <svg class="icon-link" width="16" height="16">
+                <use href="./images/SVG/symbol-defs.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list">
+            <a class="team-icon" href="">
+              <svg class="icon-link" width="16" height="16">
+                <use href="./images/SVG/symbol-defs.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  
   </header>
-  <main>
-    <section class=" hero">
+   <main>
+     <!-- <section class=" hero">
       <div class="container ">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button data-modal-open type="button" class="hero-button"> Order Service</button>
@@ -80,8 +148,8 @@
           </li>
         </ul>
       </div>
-    </section>
-    <section class="work-section">
+    </section> -->
+    <!-- <section class="work-section">
       <div class="container">
         <h2 class="work-title">What are we doing</h2>
         <ul class="card-box-picture list">
@@ -97,7 +165,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> 
     <section class="time-section">
       <div class="container">
         <h2 class="time-title">Our Team</h2>
@@ -252,8 +320,8 @@
           </li>
         </ul>
       </div>
-    </section>
-    <section class="customers-section">
+    </section> -->
+   <!-- <section class="customers-section">
       <div class="container">
         <h2 class="customers">Customers</h2>
         <ul class="customers-logo">
@@ -301,9 +369,9 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section>  -->
   </main>
-  <footer class="background-footer">
+  <!-- <footer class="background-footer">
     <div class="container footer-container">
       <div class="footer-webstudio">
         <ul class="list">
@@ -366,8 +434,8 @@
         </div>
       </div>
     </div>
-  </footer>
-  <div class="backdrop is-hidden" data-modal>
+  </footer> 
+ <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <p class="form-name">Leave your contacts and we will call you back</p>
       <button data-modal-close type="button" class="modal-button">
@@ -385,7 +453,7 @@
               </use>
             </svg>
           </span>
-        </label>
+        </label> 
         <label class="form-label ">
           <span class="form-forename">Phone</span>
           <span class="form-input-icon">
@@ -424,8 +492,10 @@
         </div>
       </form>
     </div>
-  </div>
-  <script src="./js/modal.js"></script>
-</body>
+  </div>  -->
+  <script src="./js/mobile.js"></script>
+  <!-- <script src="./js/modal.js"></script> -->
+  
+</body> 
 
 </html>

@@ -30,16 +30,18 @@ body {
   background-color: var(--color-background);
 }
 
-/* .container {
+.container {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-} */
+}
 
-
-
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 
 .list {
   list-style: none;
@@ -84,66 +86,6 @@ img {
 }
 
 /*-----------------------------Шапка сайту--------------------------------Шапка сайту------------Шапка сайту-----------*/
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-@media screen and (min-width:428px) {
-  .container {
-    width: 398px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (min-width:768px) {
-
-  .mobile-menu-open-icon {
-    display: none;
-  }
-
-  .header-nav-mobile {
-    display: none;
-  }
-  .mobile-menu{
-    display: none;
-  }
-  .mobile-menu-container{
-    display: none;
-  }
-}
-
-@media screen and (max-width:768px) {
-  .site-nav {
-    display: none;
-  }
-
-  .navigation-nav {
-    display: none;
-  } 
-}
-
-.mobile-menu-open {
-  display: flex;
-  background-color: transparent;
-  border: none;
-  line-height: 0;
-  padding: 0;
-}
-
-.mobile-menu-open-icon {
-  stroke: currentColor;
-}
-
-.header-nav-mobile {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
 .page-header {
   border-bottom: 1px solid var(--color-solid);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -167,104 +109,42 @@ img {
 .text-logo-header {
   color: var(--color-NAVYBLU);
 }
-/*-------------------MOBILE MENU------------------------MOBILE MENU----------------MOBILE MENU-----MOBILE MENU-----MOBILE MENU--*/
 
-.mobile-menu{
-  position: fixed;
-  min-width: 100%;
- min-height: 100%;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  background-color: var(--color-WHITE);
-opacity: 0;
-visibility: hidden;
-pointer-events: none;
-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
-.mobile-menu.is-open{
-  opacity: 1;
-visibility: visible;
-pointer-events:auto;
-}
-
-
-
-.mobile-menu-container{
-  position: absolute;
-  padding: 80px 24px 40px 40px;
-}
-
-/* .modal-button {
-  position: absolute;
+.site-nav {
   display: flex;
-  width: 24px;
-  height: 24px;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--color-solid);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  top: 24px;
-  right: 24px;
-  cursor: pointer;
-  fill: var(--color-NAVYBLU);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-
-
-.modal-button:hover,
-.modal-button:focus {
-  fill: var(--color-WHITE);
-  background-color: var(--color-OCEAN);
-} */
-
-
-/*     
-.site-nav-mobile .item-mobile+.item-mobile {
+.site-nav .item+.item {
   margin-left: 40px;
 
-} */
-/* 
-.site-nav-mobile{
-
-  margin-top: 32px;
-} */
-
-.site-nav-mobile .link {
-  display:inline-block;
-  letter-spacing: 0.02em;
-  font-weight: 700;
-  line-height: 1.11;
-  font-size: 36px;
-  text-transform: capitalize;
-  color: var(--color-NAVYBLU);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 40px;
-
 }
 
-
-.site-nav-mobile .link:focus {
-  color: var(--color-OCEAN);
-  text-decoration: none;
-  font-style: normal;
-}
-
-/* .site-nav-active {
-  color: var(--color-OCEAN);
-} */
-
-/* .site-nav-stay {
-  color: var(--color-NAVYBLU);
-} */
-
-/* .site-nav-line {
+.site-nav .link {
   position: relative;
-} */
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 16px;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-/* .site-nav-line::after {
+}
+
+.site-nav-active {
+  color: var(--color-OCEAN);
+}
+
+.site-nav-stay {
+  color: var(--color-NAVYBLU);
+}
+
+.site-nav-line {
+  position: relative;
+}
+
+.site-nav-line::after {
   position: absolute;
   content: "";
   display: block;
@@ -273,57 +153,62 @@ pointer-events:auto;
   margin-top: 21px;
   background-color: var(--color-OCEAN);
   border-radius: 2px;
-
+  /* opacity:0 ; */
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+
+/* .site-nav-line:hover::after
+{
+opacity:1; 
 } */
-
-
 .link {
   text-decoration: none;
   font-style: normal;
 
 }
 
-.navigation-nav-mobile{
-  display: flex;
-  margin-top: 284px;
-  margin-bottom: 40px;  
-}
-
-.navigation-nav-mobile .mobile-email:focus ,
-.navigation-nav-mobile .mobile-tel:focus{
-  color: var(--color-IRIS);
+.site-nav .link:focus,
+.site-nav .link:hover {
+  color: var(--color-OCEAN);
   text-decoration: none;
   font-style: normal;
 }
-.mobile-tel{
-  display: block;
-  font-weight: 700;
-  font-size: 36px;
-  line-height:1.11;
-  margin-bottom: 40px;
-  color: var(--color-SLATE);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   }
-  .mobile-email{
-  display: block;
-  font-weight: 500;
-  font-size: 20px;
-  line-height:1.2;
-  color: var(--color-SLATE);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  } 
 
-  .container-icon-mobile {
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
-    gap: 56px;
-  }
-  
+.navigation-nav .link {
+  text-decoration: none;
+  color: var(--color-SLATE);
+  letter-spacing: 0.02em;
+  font-style: normal;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-/*-----------------------------Герой---------------------------------------Герой-----------------------------Герой---------
+
+.navigation-nav .link:hover,
+.navigation-nav .link:focus {
+  color: var(--color-OCEAN);
+  text-decoration: none;
+  font-style: normal;
+}
+
+.navigation-nav {
+  text-decoration: none;
+  font-style: normal;
+  display: flex;
+  margin-left: auto;
+}
+
+.navigation-nav .item+.item {
+  margin-left: 40px;
+}
+
+/*-----------------------------Герой---------------------------------------Герой-----------------------------Герой---------*/
 
 .hero {
   text-align: center;
@@ -387,8 +272,8 @@ pointer-events:auto;
 .box>.item+.item {
   margin-left: 24px;
 }
-*/
-/*-------------------------МОДЕЛЬНЕ ВІКНО---------------------------МОДЕЛЬНЕ ВІКНО-------------------------------МОДЕЛЬНЕ ВІКНО-----------------------
+
+/*-------------------------МОДЕЛЬНЕ ВІКНО---------------------------МОДЕЛЬНЕ ВІКНО-------------------------------МОДЕЛЬНЕ ВІКНО-------------------------*/
 
 .backdrop {
   position: fixed;
@@ -424,7 +309,7 @@ pointer-events:auto;
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/*  */
+
 .modal-button {
   position: absolute;
   display: flex;
@@ -450,7 +335,7 @@ pointer-events:auto;
   background-color: var(--color-OCEAN);
 }
 
-/*--------------FORMA----------FORMA----------FORMA------------FORMA-------------FORMA-----------FORMA-------------------FORMA-
+/*--------------FORMA----------FORMA----------FORMA------------FORMA-------------FORMA-----------FORMA-------------------FORMA--*/
 
 .form-name {
   margin-bottom: 16px;
@@ -612,9 +497,9 @@ pointer-events:auto;
 .textarea:focus {
   border: 1px solid var(--color-IRIS);
 }
--*/
 
-/*---------------------------Секції------------------Секції------------------Секції---------------------------------Секції
+
+/*---------------------------Секції------------------Секції------------------Секції---------------------------------Секції-*/
 
 
 .button {
@@ -648,8 +533,8 @@ pointer-events:auto;
 .images {
   background-color: var(--color-WHITE);
 }
--*/
-/*----------------------------------------Картинки з текстом-----------------------Kартинки з текстом----------------
+
+/*----------------------------------------Картинки з текстом-----------------------Kартинки з текстом-----------------*/
 .card-box {
   display: flex;
   flex-wrap: wrap;
@@ -740,8 +625,8 @@ pointer-events:auto;
   top: 40px;
   letter-spacing: 0.02em;
 }
--*/
-/*------------------------- Фотографія з текстом*-----------------------------------Фотографія з текстом----------------
+
+/*------------------------- Фотографія з текстом*-----------------------------------Фотографія з текстом-----------------*/
 
 .card-box-photo {
   list-style: none;
@@ -760,8 +645,9 @@ pointer-events:auto;
   text-align: center;
   padding: 32px 0;
 
-}-*/
-/*------------------------------------картинки без тексту-------------------------------------------картинки без тексту-----
+}
+
+/*------------------------------------картинки без тексту-------------------------------------------картинки без тексту------*/
 .card-box-picture {
   flex-basis: calc((100% - 2 * 24px)/ 3);
   list-style: none;
@@ -866,9 +752,9 @@ pointer-events:auto;
   background-color: var(--color-Cloud);
   border-radius: 4px;
 
-}-*/
+}
 
-/*--------------------------------------------strategy----------------------strategy-------strategy----------------
+/*--------------------------------------------strategy----------------------strategy-------strategy-----------------*/
 .icon-strategy::before {
   background-image: url(../images/SVG/antenna\ 1.svg);
   margin-bottom: 8px;
@@ -888,8 +774,8 @@ pointer-events:auto;
   background-image: url(../images/SVG/astronaut\ 1.svg);
   margin-bottom: 8px;
 }
--*/
-/*-------------------------------------CЕКЦІЯ З ІКОНКАМИ--------------------CЕКЦІЯ З ІКОНКАМИ----------CЕКЦІЯ З ІКОНКАМИ------
+
+/*-------------------------------------CЕКЦІЯ З ІКОНКАМИ--------------------CЕКЦІЯ З ІКОНКАМИ----------CЕКЦІЯ З ІКОНКАМИ-------*/
 .customers-section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -946,9 +832,9 @@ pointer-events:auto;
   font-weight: 400;
   margin-bottom: 8px;
 }
--*/
-/*------------------------------------------------ICON соіальні мережі--------------------------ICON соіальні мережі----*/
- .container-icon {
+
+/*------------------------------------------------ICON соіальні мережі--------------------------ICON соіальні мережі-----*/
+.container-icon {
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -974,7 +860,7 @@ pointer-events:auto;
   background-color: var(--color-OCEAN)
 }
 
-/*----------------------------------------footer------------------footer--------------------footer-------footer--------
+/*----------------------------------------footer------------------footer--------------------footer-------footer----------*/
 .footer-container {
   display: flex;
 }
@@ -1092,8 +978,4 @@ pointer-events:auto;
 .footer-social {
   margin-right: 80px;
 
-}--*/
-@media screen and (max-width: 320px) {
-  body {
-    overflow-x: hidden;}}
-  
+}
