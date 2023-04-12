@@ -170,14 +170,12 @@ padding-bottom: 0;}
   .text-paragraph {
     display: flex;
     flex-wrap:wrap;
-column-gap: 24px;
+    column-gap: 24px;
   }
   
   .text-paragraph .item {
-
     flex-basis: calc((100% - 2 * 24px)/ 2);
   }
 
   .text-paragraph .item:nth-child(odd) {
-   
     margin-right: 24px;}

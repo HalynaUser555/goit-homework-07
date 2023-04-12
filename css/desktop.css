@@ -115,24 +115,32 @@
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.subtitles {
+.subtitles{
+
   font-weight: 500;
   line-height: 1.2;
 }
 
-
-
 .text-paragraph {
   font-weight: 400;
-}
-.text-paragraph {
-  display: flex;
-  width: 264px;
+  flex-wrap:nowrap;
+  column-gap: 0;
 }
 
 .text-paragraph .item {
   width: 264px;
+  
+  margin-bottom: 0px;
 }
-.text-paragraph .item+.item {
+.text-paragraph .item +.item  {
+  
   margin-left: 24px;
-} 
+  margin-right: 0;
+  width: 264px;
+ 
+}
+.text-paragraph .item:first-child{
+  margin-right: 0;
+}
+
+
