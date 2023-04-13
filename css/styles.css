@@ -775,26 +775,41 @@ screen
   letter-spacing: 0.02em;
 }
 -*/
-/*------------------------- Фотографія з текстом*-----------------------------------Фотографія з текстом----------------
+/*------------------------- Фотографія з текстом*-----------------------------------Фотографія з текстом----------------*/
 
 .card-box-photo {
   list-style: none;
-  display: flex;
-  column-gap: 24px;
+  display: inline-block
+  
 }
 
 .card-box-photo>.card-photo {
+  justify-items: center;
+
+  margin-bottom: 72px;
   background-color: var(--color-WHITE);
   border-radius: 0px 0px 4px 4px;
-  flex-basis: calc((100% - 2*24px)/4);
+  /* flex-basis: calc((100% - 2*0px)/1); */
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card-text-photo {
   text-align: center;
-  padding: 32px 0;
+  padding: 32px 0;}
 
-}-*/
+  .subtitles-team{
+    text-align: center;
+    font-style: normal;
+    color: var(--color-NAVYBLU);
+    letter-spacing: 0.02em;
+    font-weight:500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+
 /*------------------------------------картинки без тексту-------------------------------------------картинки без тексту-----*/
 
 @media screen and (max-width:1158px) {
@@ -958,7 +973,8 @@ screen
  .text-paragraph .item+.item {
   margin-left: 24px;
 } 
-/*
+*/
+
 .text-paragraph-photo {
   font-style: normal;
   color: var(--color-SLATE);
@@ -968,7 +984,7 @@ screen
   font-weight: 400;
   margin-bottom: 8px;
 }
--*/
+
 /*------------------------------------------------ICON соіальні мережі--------------------------ICON соіальні мережі----*/
  .container-icon {
   display: flex;
