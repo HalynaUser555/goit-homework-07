@@ -194,19 +194,23 @@ column-gap: 24px;
 
 
  .footer-container {
-  align-items: flex-start;
+
+  align-items: center;
+  
 }
 
 .footer-webstudio {
- display: inline-block;
-margin-right: 120px;
-margin-bottom: 0px;
+
+margin-right: 24px;
+margin-bottom: 72px;
 
 }
+.social{
+  align-items: start
+}
 .footer-social {
-  flex-direction:column;
-margin-right: 80px;
-margin-bottom: 0px;}
+margin-right: 0px;
+margin-bottom: 72px;}
 
 .logo-footer.link
 {justify-content: start;
