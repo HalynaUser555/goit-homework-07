@@ -177,7 +177,9 @@ padding-bottom: 0;}
   .text-paragraph .item:nth-child(odd) {
     margin-right: 24px;}
 
-    
+ .card-box-photo>.card-photo {
+ margin-bottom: 64px;}
+
 .card-box-photo { 
 justify-content: center;
 column-gap: 24px;
@@ -185,4 +187,5 @@ column-gap: 24px;
 
 
 .card-photo:nth-child(2n) {
-  margin-left: 24px;}
+  margin-left: 24px;
+  margin-bottom: 64px;}
