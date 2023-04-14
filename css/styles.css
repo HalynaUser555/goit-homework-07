@@ -951,15 +951,17 @@ screen
 }
 
 .customers-logo {
+  text-align: center;
+justify-content: center;
+column-gap: 24px;
 
-text-align: center;
 }
 
 .icon-logo-link {
   
   display: inline-block;
   fill: var(--color-solid-logo);
- margin-right:24px;
+
  margin-bottom: 72px;
   background: var(--color-WHITE);
   border: 1px solid var(--color-solid-logo);
@@ -1028,9 +1030,14 @@ text-align: center;
   background-color: var(--color-OCEAN)
 }
 
-/*----------------------------------------footer------------------footer--------------------footer-------footer--------
-.footer-container {
+/*----------------------------------------footer------------------footer--------------------footer-------footer--------*/
+ .footer-container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
 }
 
 .text-footer {
@@ -1053,7 +1060,14 @@ text-align: center;
   color: var(--color-Cloud);
 }
 
-.logo-footer {
+.logo-footer.link
+  {display: flex;
+  justify-content: center;
+  align-items: center;}
+
+.logo-footer
+ {
+  text-align: center;
   text-decoration: none;
   color: var(--color-IRIS);
   font-family: "Raleway", sans-serif;
@@ -1068,6 +1082,7 @@ text-align: center;
 }
 
 .social-text {
+  text-align: center;
   font-weight: 500;
   margin-bottom: 16px;
   color: var(--color-WHITE);
@@ -1079,7 +1094,7 @@ text-align: center;
   gap: 16px;
 }
 
-.team-icon-footer:hover,
+
 .team-icon-footer:focus {
   background-color: var(--color-green)
 }
@@ -1107,10 +1122,11 @@ text-align: center;
 }
 
 .footer-subscribe {
-  position: relative;
-  width: 453px;
   display: flex;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 398px;
   border-radius: 4px;
   background: var(--color-NAVYBLU)
 }
@@ -1122,6 +1138,7 @@ text-align: center;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;
+  margin-bottom: 16px;
   border: 1px solid #FFFFFF;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -1139,14 +1156,14 @@ text-align: center;
 }
 
 .footer-webstudio {
-  margin-right: 120px;
+  margin-bottom: 72px;
 
 }
 
 .footer-social {
-  margin-right: 80px;
+  margin-bottom: 72px;}
 
-}--*/
+
 @media screen and (max-width: 320px) {
   body {
     overflow-x: hidden;}}

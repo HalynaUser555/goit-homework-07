@@ -210,3 +210,117 @@
     fill: var(--color-OCEAN);
     border-color: var(--color-OCEAN);
   }
+
+
+
+
+
+
+
+
+
+  
+.text-footer {
+  font-style: normal;
+  color: var(--color-Cloud);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 17.5px;
+  width: 264px;
+}
+
+.background-footer {
+  background-color: var(--color-background-hero);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.text-logo-footer {
+  color: var(--color-Cloud);
+}
+
+.logo-footer {
+  text-decoration: none;
+  color: var(--color-IRIS);
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  margin: 0px;
+  padding: 0px;
+}
+
+.social-text {
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: var(--color-WHITE);
+}
+
+.container-icon-footer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.team-icon-footer:hover,
+.team-icon-footer:focus {
+  background-color: var(--color-green)
+}
+
+.button-subscribe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 16px;
+  margin-left: 24px;
+  background: var(--color-IRIS);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: var(--color-WHITE);
+}
+
+.subscribe-icon {
+  Width: 24px;
+  height: 20px;
+  color: var(--color-WHITE);
+
+}
+
+.footer-subscribe {
+  position: relative;
+  width: 453px;
+  display: block;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: var(--color-NAVYBLU)
+}
+
+.subscribe-input {
+  width: 100%;
+  font: inherit;
+  height: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  border: 1px solid #FFFFFF;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--color-background-hero);
+  color: var(--color-WHITE);
+
+}
+
+.subscribe-label {
+
+  color: var(--color-WHITE);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+}
