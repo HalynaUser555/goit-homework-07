@@ -1094,7 +1094,7 @@ column-gap: 24px;
   gap: 16px;
 }
 
-
+.team-icon-footer:hover,
 .team-icon-footer:focus {
   background-color: var(--color-green)
 }
