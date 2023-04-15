@@ -169,6 +169,8 @@ padding-bottom: 0;}
     flex-wrap:wrap;
     column-gap: 24px;
   }
+  .text-paragraph .item:nth-child(3n){
+    margin-bottom: 0;}
   
   .text-paragraph .item {
     flex-basis: calc((100% - 2 * 24px)/ 2);
