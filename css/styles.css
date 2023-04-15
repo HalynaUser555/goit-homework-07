@@ -935,8 +935,8 @@ screen
 
 /*-------------------------------------CЕКЦІЯ З ІКОНКАМИ--------------------CЕКЦІЯ З ІКОНКАМИ----------CЕКЦІЯ З ІКОНКАМИ------*/
 .customers-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .customers {
@@ -953,33 +953,15 @@ screen
 .customers-logo 
 {
   columns: 2;
-  column-gap: 24px; 
+  column-gap: 16px; 
 }
 
 
-/* .customers-logo>.icon-logo-link{
-  flex-basis: calc((100% - 2 * 24px)/ 2); */
-
-/* .card-box {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 48px;
-  column-gap: 24px;
-}
-
-.card-box>.card {
-  flex-basis: calc((100% - 2 * 24px)/ 3);
-  background-color: var(--color-WHITE);
-
-} */
 .icon-logo{ margin-bottom: 72px;}
 
 .icon-logo-link {
-
   display: inline-block;
   fill: var(--color-solid-logo);
-/* 
- margin-bottom: 72px; */
   background: var(--color-WHITE);
   border: 1px solid var(--color-solid-logo);
   border-radius: 4px;
