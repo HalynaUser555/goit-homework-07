@@ -168,6 +168,8 @@
   
   .customers-logo {
     flex-wrap: nowrap;
+    row-gap: 0px;
+    
   }
  
 

@@ -159,6 +159,11 @@ padding-bottom: 0;}
     min-width: 408px;
   }
 
+  .form-label {
+    width: 360px; }
+
+  .form-label-textarea {
+      width: 360px}
 
   .subtitles{
     text-align:start;}
@@ -206,14 +211,15 @@ flex-wrap: wrap;
 
  .customers-logo {
   justify-content: center;
- 
+ display: flex;
   column-gap: 24px;
-
-  
+  row-gap: 72px;
+   
 }
   
 .icon-logo-link{
   padding: 16px 32px;
+  width: 168px;
 }
 /* .customers-logo .icon-logo:nth-last-child(-n + 3){
   margin-bottom: 0;
