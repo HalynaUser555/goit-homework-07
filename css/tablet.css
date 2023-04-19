@@ -41,7 +41,9 @@ top:16px;
 }
 
 
-.navigation-nav .link:focus {
+.navigation-nav .link:focus,
+.navigation-nav .link:hover
+ {
   color: var(--color-OCEAN);
   text-decoration: none;
   font-style: normal;
