@@ -88,7 +88,7 @@ img {
 
 @media screen and (min-width:428px) {
   .container {
-    width: 398px;
+    width:320px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -173,7 +173,7 @@ img {
 .mobile-menu {
   position: fixed;
   min-width: 100%;
-  height: 796px;
+  height: 100%;
   z-index: 1000;
   top: 0;
   left: 0;
@@ -188,13 +188,13 @@ img {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5)
 }
 
 .mobile-menu-container {
   position: absolute;
   padding: 80px 24px 40px 40px;
 }
+
 
 .site-nav-mobile .link {
   display: inline-block;
@@ -205,10 +205,11 @@ img {
   text-transform: capitalize;
   color: var(--color-NAVYBLU);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 40px;
+ padding-bottom: 40px;
 
 }
-
+.site-studio-active.link {
+  color: var(--color-OCEAN);}
 
 .site-nav-mobile .link:focus {
   color: var(--color-OCEAN);
@@ -229,8 +230,7 @@ img {
   margin-bottom: 40px;
 }
 
-.navigation-nav-mobile .mobile-email:focus,
-.navigation-nav-mobile .mobile-tel:focus {
+.mobile-email:focus, .mobile-tel:focus {
   color: var(--color-IRIS);
   text-decoration: none;
   font-style: normal;
@@ -241,8 +241,8 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  margin-bottom: 40px;
-  color: var(--color-SLATE);
+  padding-bottom: 40px;
+  color: var(--color-IRIS);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -619,7 +619,7 @@ screen and (min-resolution: 2dppx) and (max-width: 768px) {
   background-color: var(--color-WHITE);
 }
 
-/*----------------------------------------Картинки з текстом-----------------------Kартинки з текстом----------------
+/*----------------------------------------Картинки з текстом-----------------------Kартинки з текстом----------------*/
 .card-box {
   display: flex;
   flex-wrap: wrap;
@@ -710,7 +710,7 @@ screen and (min-resolution: 2dppx) and (max-width: 768px) {
   top: 40px;
   letter-spacing: 0.02em;
 }
--*/
+
 /*------------------------- Фотографія з текстом*-----------------------------------Фотографія з текстом----------------*/
 
 .card-box-photo {
