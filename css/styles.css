@@ -273,7 +273,7 @@ img {
 
 .banner {
   min-height: 432px;
-  background-image: url('../images/SVG/mobile/Mpeople-office\ 1.jpg');
+  background-image: url('../images/index/mobile/Mpeople-office\ 1.jpg');
   background-position: center top;
   background-size: 428px 432px;
   background-repeat: no-repeat;
@@ -288,7 +288,7 @@ screen
 screen and (min-resolution: 192dpi) and (max-width:768px),
 screen and (min-resolution: 2dppx) and (max-width: 768px) {
   .banner {
-    background-image: url('../images/SVG/mobile/Mpeople-office\ 1@2x.jpg')
+    background-image: url('../images/index/mobile/Mpeople-office\ 1@2x.jpg')
   }
 }
 
