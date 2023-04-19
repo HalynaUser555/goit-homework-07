@@ -1,6 +1,6 @@
 @media screen and (min-width: 1158px){
     .container{
-      width: 1128px;
+      width: 1158px;
   }
 }
 .logo{
@@ -112,7 +112,7 @@
   padding-bottom: 120px;
 }
 .subtitles{
-
+  font-size:20px;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -121,6 +121,7 @@
   font-weight: 400;
   flex-wrap:nowrap;
   column-gap: 0;
+  row-gap: 0;
 }
 
 .text-paragraph .item {
@@ -149,7 +150,7 @@
 
 
 .card-box-photo {
-  display: flex;
+  flex-wrap: nowrap;
   
 }
 
@@ -168,7 +169,7 @@
   .customers-logo {
     flex-wrap: nowrap;
   }
-  .icon-logo{ margin-bottom: 0;}
+ 
 
   .icon-logo-link {
     display: flex;
@@ -207,9 +208,9 @@
   margin-left: 0;
 }
 
-.subscribe-input{
+/* .subscribe-input{
   width: 250px;
-}
+} */
 
 
 .footer-webstudio {

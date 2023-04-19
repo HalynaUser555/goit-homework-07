@@ -845,7 +845,7 @@ screen and (min-resolution: 2dppx) and (max-width: 768px) {
   color: var(--color-NAVYBLU);
   letter-spacing: 0.02em;
   font-weight: 700;
-  font-size: 20px;
+  font-size:36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
@@ -897,13 +897,10 @@ screen and (min-resolution: 2dppx) and (max-width: 768px) {
 }
 
 .customers-logo {
-  columns: 2;
+  display: flex;
+  flex-wrap: wrap;
   column-gap: 16px;
-}
-
-
-.icon-logo {
-  margin-bottom: 72px;
+  row-gap: 72px;
 }
 
 .icon-logo-link {
@@ -917,10 +914,10 @@ screen and (min-resolution: 2dppx) and (max-width: 768px) {
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-logo .icon-logo:nth-child(3),
+/* .customers-logo .icon-logo:nth-child(3),
 .icon-logo:nth-child(6) {
-  margin-bottom: 0px;
-}
+  margin-bottom: 72px;
+} */
 
 .icon-logo-link:focus,
 .icon-logo-link:hover {
@@ -1033,12 +1030,7 @@ screen and (min-resolution: 2dppx) and (max-width: 768px) {
   color: var(--color-WHITE);
 }
 
-@media screen and (min-width:768px) {
-  .subscribe-text {
-    margin-left: 93px;
-  }
 
-}
 
 .container-icon-footer {
   display: flex;
@@ -1097,7 +1089,9 @@ screen and (min-resolution: 2dppx) and (max-width: 768px) {
   color: var(--color-WHITE);
 
 }
-
+.subscribe-input::placeholder{
+  color: var(--color-WHITE);
+}
 .subscribe-label {
 
   color: var(--color-WHITE);
